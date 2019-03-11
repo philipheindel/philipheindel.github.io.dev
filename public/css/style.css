@@ -40,7 +40,7 @@
 }
 
 body {
-    font-family: Inconsolata;
+    font-family: Arial, Helvetica, sans-serif;
     /*font-family: Consolas, Monaco, monospace;*/
     /*font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';*/
     padding-top: 54px;
@@ -62,11 +62,11 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Inconsolata;
+    font-family: Arial, Helvetica, sans-serif;
     /*font-family: Consolas, Monaco, monospace;*/
     /*font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';*/
     font-weight: 700;
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
     color: #343a40;
 }
 
@@ -89,9 +89,9 @@ p.lead {
 }
 
 .subheading {
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
     font-weight: 500;
-    font-family: Inconsolata;
+    font-family: Arial, Helvetica, sans-serif;
     /*font-family: Consolas, Monaco, monospace;*/
     /*font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';*/
     font-size: 1.5rem;
@@ -127,9 +127,9 @@ p.lead {
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.05rem;
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
 }
 
 #sideNav .navbar-toggler:focus {
@@ -237,8 +237,78 @@ a {
     color: #006064;
 }
 
+li a,
+li a:hover {
+    text-decoration: none;
+}
+
 a:hover,
 a:focus,
 a:active {
     color: #003539;
+}
+
+div.col.devicon {
+    text-align: center;
+}
+
+svg.devicon {
+    width: 147px;
+    height: 147px;
+}
+
+ul.dev-icons li:hover {
+    cursor: pointer;
+}
+
+i#javaDevicon:hover {
+    color: #ea2d2e;
+}
+
+i#cDevicon:hover {
+    color: #03599c;
+}
+
+i#cplusplusDevicon:hover {
+    color: #9c033a;
+}
+
+i#csharpDevicon:hover {
+    color: #68217a;
+}
+
+i#html5Devicon:hover {
+    color: #e54d26;
+}
+
+i#css3Devicon:hover {
+    color: #3d8fc6;
+}
+
+i#javascriptDevicon:hover {
+    color: #f0db4f;
+}
+
+i#phpDevicon:hover {
+    color: #6181b6;
+}
+
+i#mysqlDevicon:hover {
+    color: #03628a;
+}
+
+i#bootstrapDevicon:hover {
+    color: #59407f;
+}
+
+i#androidDevicon:hover {
+    color: #a4c439;
+}
+
+i#assemblyIcon:hover {
+    color: #000000;
+}
+
+i#jqueryDevicon:hover {
+    color: #0769ad;
 }
