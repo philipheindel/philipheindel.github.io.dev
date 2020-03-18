@@ -1,27 +1,72 @@
-# Philip Heindel Personal Web Page Repository
+![Build Status](https://gitlab.com/pages/gatsby/badges/master/build.svg)
 
-## Resources Used
-For this webpage, I utilized many outside resources. In efforts to not take credit for what I have not made, I have provided links below for all of the external fonts, templates, and libraries that I used on this page.
+---
 
-* [jQuery](https://jquery.com/) - Used for all of the site's functionality.
-* [Popper.js](https://popper.js.org/) - Provides the functionality for the pop-up tooltips.
-* [Bootstrap](https://getbootstrap.com/) - Handles the styling and formatting of the site.
-* [Bootstrap Resume Template](https://startbootstrap.com/themes/resume/) - Provided a base framework off of which the site is built.
-* [Devicon](http://konpa.github.io/devicon/) - Provides some of the language icons.
-* [Font Awesome](https://fontawesome.com/) - Provides some of the language icons.
-* [Inconsolata](https://fonts.google.com/specimen/Inconsolata) - Provides the font for the site.
+Example [Gatsby] website using GitLab Pages.
 
-## Git Bash aliases used in development
-```bash
-alias repos='cd /c/Users/pehei/git;ll'
-alias gh='cd /c/Users/pehei/git/philipheindel.github.io;git status'
-alias gl='cd /c/Users/pehei/git/philipheindel.gitlab.io;git status'
-alias bb='cd /c/Users/pehei/git/philipheindel.bitbucket.io;git status'
-alias htdocs='cd /c/xampp/htdocs;git status'
-alias state='git status --long'
-alias pull='git pull'
-alias pullmaster='git pull origin master'
-alias commit='git add . ;git commit -m'
-alias push='git push'
-alias pushmaster='git push origin master'
+Learn more about GitLab Pages at https://pages.gitlab.io and the official
+documentation https://docs.gitlab.com/ce/user/project/pages/.
+
+---
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [GitLab CI](#gitlab-ci)
+- [Building locally](#building-locally)
+- [GitLab User or Group Pages](#gitlab-user-or-group-pages)
+- [Did you fork this project?](#did-you-fork-this-project)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## GitLab CI
+
+This project's static Pages are built by [GitLab CI][ci], following the steps
+defined in [`.gitlab-ci.yml`](.gitlab-ci.yml):
+
+```yml
+image: node
+
+pages:
+  script:
+  - npm install
+  - npm install gatsby-cli
+  - node_modules/.bin/gatsby build --prefix-paths
+  artifacts:
+    paths:
+    - public
+  cache:
+    paths:
+      - node_modules
+  only:
+  - master
 ```
+
+## Building locally
+
+To work locally with this project, you'll have to follow the steps below:
+
+1. Fork, clone or download this project
+1. [Install] Gatsby CLI
+1. Generate and preview the website with hot-reloading: `gatsby develop`
+1. Add content
+
+Read more at Gatsby's [documentation].
+
+## Did you fork this project?
+
+If you forked this project for your own use, please go to your project's
+**Settings** and remove the forking relationship, which won't be necessary
+unless you want to contribute back to the upstream project.
+
+[ci]: https://about.gitlab.com/gitlab-ci/
+[Gatsby]: https://www.gatsbyjs.org/
+[install]: https://www.gatsbyjs.org/docs/
+[documentation]: https://www.gatsbyjs.org/docs/
+[userpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#user-or-group-pages
+[projpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#project-pages
+
+----
+
+Forked from https://github.com/gatsbyjs/gatsby-starter-default
