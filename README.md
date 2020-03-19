@@ -1,72 +1,68 @@
-![Build Status](https://gitlab.com/pages/gatsby/badges/master/build.svg)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-Example [Gatsby] website using GitLab Pages.
+In the project directory, you can run:
 
-Learn more about GitLab Pages at https://pages.gitlab.io and the official
-documentation https://docs.gitlab.com/ce/user/project/pages/.
+### `npm start`
 
----
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-- [GitLab CI](#gitlab-ci)
-- [Building locally](#building-locally)
-- [GitLab User or Group Pages](#gitlab-user-or-group-pages)
-- [Did you fork this project?](#did-you-fork-this-project)
+### `npm test`
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## GitLab CI
+### `npm run build`
 
-This project's static Pages are built by [GitLab CI][ci], following the steps
-defined in [`.gitlab-ci.yml`](.gitlab-ci.yml):
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```yml
-image: node
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-pages:
-  script:
-  - npm install
-  - npm install gatsby-cli
-  - node_modules/.bin/gatsby build --prefix-paths
-  artifacts:
-    paths:
-    - public
-  cache:
-    paths:
-      - node_modules
-  only:
-  - master
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Building locally
+### `npm run eject`
 
-To work locally with this project, you'll have to follow the steps below:
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-1. Fork, clone or download this project
-1. [Install] Gatsby CLI
-1. Generate and preview the website with hot-reloading: `gatsby develop`
-1. Add content
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Read more at Gatsby's [documentation].
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## Did you fork this project?
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-If you forked this project for your own use, please go to your project's
-**Settings** and remove the forking relationship, which won't be necessary
-unless you want to contribute back to the upstream project.
+## Learn More
 
-[ci]: https://about.gitlab.com/gitlab-ci/
-[Gatsby]: https://www.gatsbyjs.org/
-[install]: https://www.gatsbyjs.org/docs/
-[documentation]: https://www.gatsbyjs.org/docs/
-[userpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#user-or-group-pages
-[projpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#project-pages
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-----
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Forked from https://github.com/gatsbyjs/gatsby-starter-default
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
