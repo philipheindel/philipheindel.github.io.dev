@@ -1,4 +1,5 @@
 terminal:
+  image: node:12.16.1
   script: /bin/sh
   variables:
     NODE_ENV: "test"
