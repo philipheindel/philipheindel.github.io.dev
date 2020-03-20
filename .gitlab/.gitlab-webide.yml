@@ -1,6 +1,4 @@
 terminal:
-  before_script:
-    - apt-get update
   script: /bin/sh
   variables:
     NODE_ENV: "test"
