@@ -32,4 +32,3 @@ jobs:
       with:
         BRANCH: master
         FOLDER: build
-        O
