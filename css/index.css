@@ -1,0 +1,35 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#navbar {
+  display: block;
+  height: 100%;
+  width: 140px;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  background-color: gray;
+  padding: 5px;
+}
+
+button {
+  padding: 15px;
+  margin: 0px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  outline: none;
+  transition: ease-in-out .3s;
+  width: 100%;
+  /*font-family: 'Courier New', Courier, monospace; */
+  font: bolder 1rem 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+  background-color: var(--button-active-primary);
+  border: 2px solid var(--button-active-secondary);
+  cursor: pointer;
+}
