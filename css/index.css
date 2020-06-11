@@ -22,7 +22,7 @@ button {
   border-radius: 5px;
   margin-bottom: 5px;
   outline: none;
-  transition: ease-in-out .3s;
+  transition: .2s;
   width: 100%;
   /*font-family: 'Courier New', Courier, monospace; */
   font: bolder 1rem 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
