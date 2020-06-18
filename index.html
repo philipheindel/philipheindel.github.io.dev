@@ -14,26 +14,36 @@
     <title>Philip Heindel</title>
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
     <script src="./js/index.js" type="text/javascript"></script>
   </head>
-  <body>
-    <div id="navbar">
-      <div>
-        <button>About</button>
-      </div>
-      <div>
-        <button>Education</button>
-      </div>
-      <div>
-        <button>Experience</button>
-      </div>
-      <div>
-        <button>Projects</button>
-      </div>
-      <div>
-        <button>Contact</button>
-      </div>
+  <body onload="init()">
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item nav-live">
+          <span>
+            <a id="aboutLink" class="nav-btn">About</a>
+          </span>
+        </li>
+        <li class="nav-item">
+          <a id="educationLink" class="nav-btn">Education</a>
+        </li>
+        <li class="nav-item">
+          <a id="experienceLink" class="nav-btn">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a id="projectsLink" class="nav-btn">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a id="contactLink" class="nav-btn">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a id="configLink" class="nav-btn tooltip">Config</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="main">
+      asdf
     </div>
-    
   </body>
 </html>
