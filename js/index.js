@@ -1,5 +1,6 @@
 const init = () => {
   document.querySelector("#aboutLink").addEventListener("click", () => {
+    alert(data.project);
     alert("You clicked about");
   });
   document.querySelector("#educationLink").addEventListener("click", () => {
