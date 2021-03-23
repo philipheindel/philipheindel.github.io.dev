@@ -11,14 +11,14 @@ body {
   padding: 0px;
   height: 100%;
 }
-/*
+
 .navbar {
   position: fixed;
-  background-color: var(--primary);
+  background-color: var(--primary-dark);
   transition: width 600ms ease;
-  height: 100%;
+  width: 100%;
 }
-
+/*
 .nav-list {
   list-style: none;
   padding: 0;
